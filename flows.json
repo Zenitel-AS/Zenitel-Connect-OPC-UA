@@ -1,0 +1,4719 @@
+[
+    {
+        "id": "b4792f36.7b37e",
+        "type": "tab",
+        "label": "NodeRed UA-Server",
+        "disabled": false
+    },
+    {
+        "id": "83439742.083188",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://0.0.0.0:4840/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false
+    },
+    {
+        "id": "9cd7df76dded4d0a",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "f1ab036094358fe5",
+        "type": "wamp-client",
+        "address": "wss://192.168.240.100:8086",
+        "realm": "zenitel",
+        "authId": "erik",
+        "password": "mortensen",
+        "name": "Zenitel Connect"
+    },
+    {
+        "id": "c941ac5c13b4bc80",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://H7Q8Q13.vstage.co:53530/OPCUA/SimulationServer",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "d3fe6004495c8c9a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1a3f96b2bbd20ccd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cc8f4356b2f15e6b",
+        "type": "ui_group",
+        "name": "OPCUA",
+        "tab": "d3fe6004495c8c9a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "834b0087d8c52343",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "a1af90d52b80bd5d",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://opcuademo.sterfive.com:26543",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "0da727c664b1f238",
+        "type": "wamp-client",
+        "address": "wss://192.168.240.100:8086",
+        "realm": "zenitel",
+        "authId": "erik",
+        "password": "mortensen",
+        "name": "Zenitel Connect"
+    },
+    {
+        "id": "61f749e4.827ac8",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:538810",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "9f64f42cbaec12da",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.101.101:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "fe201dfb1c2a9b68",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.101.101:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "39d5432425ccbf7a",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:62544/Quickstarts/AlarmConditionServer",
+        "login": false
+    },
+    {
+        "id": "5696440c7fbbae89",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:62544/Quickstarts/AlarmConditionServer",
+        "login": false
+    },
+    {
+        "id": "bf87ddc3897a7486",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "d7170881c83dd74a",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "f790e9aeaef62b4f",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://H7Q8Q13.vstage.co:53530/OPCUA/SimulationServer",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "6617cbef76f01acf",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53881/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "04d70c3418207207",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://opcuademo.sterfive.com:26543",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "3944173b30453479",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "457d2182b0af24ca",
+        "type": "ui_group",
+        "name": "OPCUA",
+        "tab": "3944173b30453479",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5bf2e19e881e99e6",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "fba08b775a1caff3",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:62544/Quickstarts/AlarmConditionServer",
+        "login": false
+    },
+    {
+        "id": "d92969c0c9238de2",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:62544/Quickstarts/AlarmConditionServer",
+        "login": false
+    },
+    {
+        "id": "89b29ec96ff2e1ef",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "7af816d9eac0fedb",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "6221f6b2c3bc45cd",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://H7Q8Q13.vstage.co:53530/OPCUA/SimulationServer",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "069329602af553df",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53881/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "cbf1a81ed43e8d6a",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://opcuademo.sterfive.com:26543",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "dc16da9dbfa1e1fd",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5c7a80bfb2a1be73",
+        "type": "ui_group",
+        "name": "OPCUA",
+        "tab": "dc16da9dbfa1e1fd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a316f894d96a753a",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53880",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "ad01c51f3f999823",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://H7Q8Q13.vstage.co:53530/OPCUA/SimulationServer",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "dedb2517271deaa9",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "215f79a0c08e38ea",
+        "type": "ui_group",
+        "name": "OPCUA",
+        "tab": "dedb2517271deaa9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "06d973884d30ed23",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://localhost:53881/",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "2b6149a11c79a1bf",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://opcuademo.sterfive.com:26543",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "a097687fbb57ab93",
+        "type": "wamp-client",
+        "address": "wss://192.168.240.100:8086",
+        "realm": "zenitel",
+        "authId": "erik",
+        "password": "mortensen",
+        "name": "Zenitel Connect Pro"
+    },
+    {
+        "id": "88d21f70.acd4",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "Output from OPC UA Server",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "32458cf0e60412b1",
+        "type": "OpcUa-Discovery",
+        "z": "b4792f36.7b37e",
+        "d": true,
+        "name": "",
+        "x": 130,
+        "y": 30,
+        "wires": [
+            [
+                "34e6c00a978e7834"
+            ]
+        ]
+    },
+    {
+        "id": "ab08549b.86da7",
+        "type": "OpcUa-Server",
+        "z": "b4792f36.7b37e",
+        "port": "53880",
+        "name": "Zenitel Connect OPC UA Server",
+        "endpoint": "",
+        "users": "",
+        "nodesetDir": "",
+        "autoAcceptUnknownCertificate": true,
+        "registerToDiscovery": true,
+        "constructDefaultAddressSpace": false,
+        "allowAnonymous": true,
+        "endpointNone": true,
+        "endpointSign": true,
+        "endpointSignEncrypt": true,
+        "endpointBasic128Rsa15": true,
+        "endpointBasic256": true,
+        "endpointBasic256Sha256": true,
+        "maxNodesPerBrowse": "0",
+        "maxNodesPerHistoryReadData": "0",
+        "maxNodesPerHistoryReadEvents": "0",
+        "maxNodesPerHistoryUpdateData": "0",
+        "maxNodesPerRead": "0",
+        "maxNodesPerWrite": "0",
+        "maxNodesPerMethodCall": "0",
+        "maxNodesPerRegisterNodes": "0",
+        "maxNodesPerNodeManagement": "0",
+        "maxMonitoredItemsPerCall": "0",
+        "maxNodesPerHistoryUpdateEvents": "0",
+        "maxNodesPerTranslateBrowsePathsToNodeIds": "0",
+        "maxConnectionsPerEndpoint": "20",
+        "maxMessageSize": "",
+        "maxBufferSize": "",
+        "maxSessions": "20",
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "88d21f70.acd4"
+            ]
+        ]
+    },
+    {
+        "id": "9725920b9d5e46e5",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "Output Status Code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1880,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "35f1b12321569c47",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Get StatusCode value",
+        "func": "var status = msg.payload.toJSONFull();\nvar status2 = JSON.parse(JSON.stringify(status));\n\nnode.warn(\"Value:\" + status2.value);\nnode.warn(\"Name: \" + status2.name);\nnode.warn(\"Desc: \" + status2.description);\n\n// Return just statuscode value\nmsg.payload = status2.value;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 900,
+        "wires": [
+            [
+                "9725920b9d5e46e5"
+            ]
+        ]
+    },
+    {
+        "id": "99d4b44504dc4fc1",
+        "type": "OpcUa-Client",
+        "z": "b4792f36.7b37e",
+        "endpoint": "9cd7df76dded4d0a",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": "20",
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "Write Client",
+        "x": 1610,
+        "y": 960,
+        "wires": [
+            [
+                "35f1b12321569c47"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a348f0ce2a8e6c3c",
+        "type": "catch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "d954e5a294d849a2"
+            ]
+        ]
+    },
+    {
+        "id": "d954e5a294d849a2",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "Exception Encountered",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6360c030cbd7b03e",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build the Folder \"Zenitel Connect Pro\"",
+        "func": "flow.set(\"CallEventEnabled\", false);\nflow.set(\"CallLegEventEnabled\", false);\nflow.set(\"GPO_EventEnabled\", false);\nflow.set(\"GPI_EventEnabled\", false);\nflow.set(\"DeviceAccountEventEnabled\", false);\nflow.set(\"OpenDoorEventEnabled\", false);\n\nconst delay = (/** @type {number} */ ms) => new Promise(res => context.set(\"timer\", setTimeout(res, ms)))\nconst waitingTime = 100;\n\n//--------------------------------------------------------\n// Add the Folder \"Zenitel Connect Pro\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addFolder\"\n};\nmsg.topic = \"ns=1;s=Zenitel Connect Pro;description=This folder is a mapping of all functionality available via the Zenitel Connect open API swagger interface\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add the Folder \"System\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addFolder\"\n};\nmsg.topic = \"ns=1;s=System\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Audio Messages\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Audio Messages;datatype=ExtensionObject;typeId=ns=3;i=3115\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Groups\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Groups;datatype=ExtensionObject;typeId=ns=3;i=3116\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Directory\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Directory;datatype=ExtensionObject;typeId=ns=3;i=3117\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET System Platform Version\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET System Platform Version;datatype=ExtensionObject;typeId=ns=3;i=3118\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Device Accounts\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Device Accounts;datatype=ExtensionObject;typeId=ns=3;i=3119\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Net Interfaces\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Net Interfaces;datatype=ExtensionObject;typeId=ns=3;i=3120\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable \"Software Version\"\n\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Software Version;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add the Folder \"Call Handling\"\n//--------------------------------------------------------\n// Set Folder \"Zenitel Connect Pro\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"setFolder\"\n};\nmsg.topic = \"ns=1;s=Zenitel Connect Pro\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\nmsg.payload =\n{\n    \"opcuaCommand\": \"addFolder\"\n};\nmsg.topic = \"ns=1;s=Call Handling\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable Calls List\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Calls List;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable Call Legs List\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Call Legs List;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable Call Queues List\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Call Queues List;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable POST Calls\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=POST Calls;datatype=ExtensionObject;typeId=ns=3;i=3110\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable DELETE Calls\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=DELETE Calls;datatype=ExtensionObject;typeId=ns=3;i=3111\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable DELETE Call Id\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=DELETE Call Id;datatype=ExtensionObject;typeId=ns=3;i=3112\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Calls\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Calls;datatype=ExtensionObject;typeId=ns=3;i=3113\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Call Legs\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Call Legs;datatype=ExtensionObject;typeId=ns=3;i=3114\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable GET Call Queues\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=GET Call Queues;datatype=ExtensionObject;typeId=ns=3;i=3121\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable POST Open Door\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=POST Open Door;datatype=ExtensionObject;typeId=ns=3;i=3122\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add the Folder \"Device\"\n//--------------------------------------------------------\n// Set Folder \"Zenitel Connect Pro\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"setFolder\"\n};\nmsg.topic = \"ns=1;s=Zenitel Connect Pro\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\nmsg.payload =\n{\n    \"opcuaCommand\": \"addFolder\"\n};\nmsg.topic = \"ns=1;s=Device\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable POST Key\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=POST Key;datatype=ExtensionObject;typeId=ns=3;i=3123\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add the Folder \"Events\" \n//--------------------------------------------------------\n// Set Folder \"Zenitel Connect Pro\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"setFolder\"\n};\nmsg.topic = \"ns=1;s=Zenitel Connect Pro\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\nmsg.payload =\n{\n    \"opcuaCommand\": \"addFolder\"\n};\nmsg.topic = \"ns=1;s=Events\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Call\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Call;datatype=ExtensionObject;typeId=ns=3;i=3124\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Call Leg\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Call Leg;datatype=ExtensionObject;typeId=ns=3;i=3125\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Device GPO\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Device GPO;datatype=ExtensionObject;typeId=ns=3;i=3126\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Device GPI\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Device GPI;datatype=ExtensionObject;typeId=ns=3;i=3127\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Device Account\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Device Account;datatype=ExtensionObject;typeId=ns=3;i=3128\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define the variable TRACE Open Door\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=TRACE Open Door;datatype=ExtensionObject;typeId=ns=3;i=3129\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add CallEvent to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable CallEvent\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=CallEvent;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define Call Event as Discrete Alarm\nmsg.topic = \"ns=1;s=CallEvent;datatype=Float\";\nmsg.payload = {\"opcuaCommand\": \"installDiscreteAlarm\"};\nmsg.priority = 100;\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add CallLegEvent to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable CallLegEvent\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nmsg.topic = \"ns=1;s=CallLegEvent;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define CallLegEvenEvent as Discrete Alarm\nmsg.topic = \"ns=1;s=CallLegEvent;datatype=Float\";\nmsg.payload = { \"opcuaCommand\": \"installDiscreteAlarm\" };\nmsg.priority = 100;\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add Device_GPO_Event to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable Device_GPO_Event\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nmsg.topic = \"ns=1;s=Device_GPO_Event;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define  Device_GPO_Event as Discrete Alarm\nmsg.topic = \"ns=1;s=Device_GPO_Event;datatype=Float\";\nmsg.payload = { \"opcuaCommand\": \"installDiscreteAlarm\" };\nmsg.priority = 100;\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add Device_GPI_Event to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable Device_GPI_Event\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nmsg.topic = \"ns=1;s=Device_GPI_Event;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define  Device_GPI_Event as Discrete Alarm\nmsg.topic = \"ns=1;s=Device_GPI_Event;datatype=Float\";\nmsg.payload = { \"opcuaCommand\": \"installDiscreteAlarm\" };\nmsg.priority = 100;\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add Device_Account_Event to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable DeviceAccountEvent\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nmsg.topic = \"ns=1;s=DeviceAccountEvent;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define  Device_AccountEvent as Discrete Alarm\nmsg.topic = \"ns=1;s=DeviceAccountEvent;datatype=Float\";\nmsg.payload = { \"opcuaCommand\": \"installDiscreteAlarm\" };\nmsg.priority = 100;\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add OpenDoorEvent to the Folder \"Events\"\n//--------------------------------------------------------\n// Define the variable OpenDoorEvent\"\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nmsg.topic = \"ns=1;s=OpenDoorEvent;datatype=Float\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n// Define Call Event as Discrete Alarm\nmsg.topic = \"ns=1;s=OpenDoorEvent;datatype=Float\";\nmsg.payload = { \"opcuaCommand\": \"installDiscreteAlarm\" };\nmsg.priority = 100;\nnode.send(msg);\n//------------------------------------------------------------------------------------\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Add Variables to the Folder \"System\"\n//--------------------------------------------------------\n// Set Folder System\nmsg.payload =\n{\n    \"opcuaCommand\": \"setFolder\"\n};\nmsg.topic = \"ns=1;s=System\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Define the variable Net Interfaces\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Net Interfaces;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Define the variable Device Accounts\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Device Accounts;datatype=String\";\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Define the variable Audio Messages\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Audio Messages;datatype=String\"\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Define the variable Groups\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\nmsg.topic = \"ns=1;s=Groups;datatype=String\"\nnode.send(msg);\n\nawait delay(waitingTime);\n\n//--------------------------------------------------------\n// Define the variable Directory\"\n//--------------------------------------------------------\nmsg.payload =\n{\n    \"opcuaCommand\": \"addVariable\"\n};\n\nawait delay(waitingTime);\n\nconsole.log('Clear Client Requests');\nmsg.topic = \"Clear Client Requests\"\nnode.send(msg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "c053e109a47c960d"
+            ]
+        ]
+    },
+    {
+        "id": "cc98194dc37b5011",
+        "type": "inject",
+        "z": "b4792f36.7b37e",
+        "name": "Start Building Folders",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "6360c030cbd7b03e"
+            ]
+        ]
+    },
+    {
+        "id": "6a6fe6648b7b4436",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "d": true,
+        "name": "UALDS from OPC Foundation is running",
+        "info": "",
+        "x": 200,
+        "y": 70,
+        "wires": []
+    },
+    {
+        "id": "cf34605890decbb8",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Build Zenitel Connect Pro Folders",
+        "info": "",
+        "x": 170,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "34e6c00a978e7834",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 30,
+        "wires": []
+    },
+    {
+        "id": "26da13bf82946b8a",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Call Leg Event ",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=CallLegEvent-AlarmText;datatype=String\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 5360,
+        "wires": [
+            [
+                "0f3653f42f8a5c7f"
+            ]
+        ]
+    },
+    {
+        "id": "4e825445ce9e6676",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Call Event",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=CallEvent-AlarmText;datatype=String\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 5300,
+        "wires": [
+            [
+                "c5f1af54c9cab379"
+            ]
+        ]
+    },
+    {
+        "id": "ec84a3b43c064dc8",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Open Door Event ",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=OpenDoorEvent-AlarmText;datatype=String\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 5600,
+        "wires": [
+            [
+                "bfaea191259581a8"
+            ]
+        ]
+    },
+    {
+        "id": "0641fca503d34313",
+        "type": "OpcUa-Client",
+        "z": "b4792f36.7b37e",
+        "endpoint": "9cd7df76dded4d0a",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "300",
+        "timeUnit": "ms",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": true,
+        "maxChunkCount": "20",
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "Handle Subscription ",
+        "x": 780,
+        "y": 1780,
+        "wires": [
+            [
+                "65ce51f4f225c186"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "14863bb256d5c805",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Calls",
+        "func": "var from_dirno = msg.payload[\"from_dirno\"];\nvar to_dirno = msg.payload[\"to_dirno\"];\nvar call_id = msg.payload[\"call_id\"];\nvar state = msg.payload[\"state\"];\nvar verbose = msg.payload[\"verbose\"];\n\nvar mess =\n{\n    payload:\n    {\n        'from_dirno': from_dirno,\n        'to_dirno': to_dirno,\n        'call_id': call_id,\n        'state': state,\n        'verbose': verbose\n    }\n}\n\n// Only add entry if value is defined\n\n//---- from_dirno\n\nif ( (from_dirno == null) ||\n     (from_dirno == '') )\n{\n    delete mess.payload['from_dirno'];\n}\n\n//---- to_dirno\n\nif ( (to_dirno == null) ||\n     (to_dirno == '') )\n{\n    delete mess.payload['to_dirno'];\n}\n\n//---- call_id\n\nif ( (call_id == null) ||\n     (call_id == '') )\n{\n    delete mess.payload['call_id'];\n}\n\n//---- state\n\nif ( (state == null) ||\n     (state == '') )\n{\n    delete mess.payload['state'];\n}\n\n//---- verbose\n\nif (verbose == null) {\n    delete mess.payload['verbose'];\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 2010,
+        "wires": [
+            [
+                "cf9f827d06258e01",
+                "ee2da46304c9db33"
+            ]
+        ]
+    },
+    {
+        "id": "e3cabef0dd32ea15",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Calls",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'from_dirno': '0',\n        'to_dirno': '0',\n        'call_id': '0',\n        'state': '0',\n        'verbose': false\n    }\n}\n\nmess.topic = \"ns=1;s=GET Calls;datatype=ExtensionObject;typeId=ns=3;i=3113\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 450,
+        "wires": [
+            [
+                "2c3ef92f7624697d"
+            ]
+        ]
+    },
+    {
+        "id": "548000d724aeb215",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Subscribe Client Requests",
+        "func": "var msg1  = {};\nvar msg2  = {};\nvar msg3  = {};\nvar msg4  = {};\nvar msg5  = {};\nvar msg6  = {};\nvar msg7  = {};\nvar msg8  = {};\nvar msg9  = {};\nvar msg10 = {};\nvar msg11 = {};\nvar msg12 = {};\nvar msg13 = {};\nvar msg14 = {};\nvar msg15 = {};\nvar msg16 = {};\nvar msg17 = {};\nvar msg18 = {};\nvar msg19 = {};\nvar msg20 = {};\n\nconsole.log('Started Subscribe Client Requests');\n\nmsg1.topic  = \"ns=1;s=GET Calls;datatype=ExtensionObject\";\nmsg2.topic  = \"ns=1;s=GET Call Legs;datatype=ExtensionObject\";\nmsg3.topic  = \"ns=1;s=GET Audio Messages;datatype=ExtensionObject\";\nmsg4.topic  = \"ns=1;s=GET Groups;datatype=ExtensionObject\";\nmsg5.topic  = \"ns=1;s=GET Directory;datatype=ExtensionObject\";\nmsg6.topic  = \"ns=1;s=GET System Platform Version;datatype=ExtensionObject\";\nmsg7.topic  = \"ns=1;s=GET Device Accounts;datatype=ExtensionObject\";\nmsg8.topic  = \"ns=1;s=GET Net Interfaces;datatype=ExtensionObject\";\nmsg9.topic  = \"ns=1;s=GET Call Queues;datatype=ExtensionObject\";\nmsg10.topic = \"ns=1;s=POST Open Door;datatype=ExtensionObject\";\nmsg11.topic = \"ns=1;s=POST Key;datatype=ExtensionObject\";\nmsg12.topic = \"ns=1;s=POST Calls;datatype=ExtensionObject\";\nmsg13.topic = \"ns=1;s=DELETE Calls;datatype=ExtensionObject\";\nmsg14.topic = \"ns=1;s=DELETE Call Id;datatype=ExtensionObject\";\nmsg15.topic = \"ns=1;s=TRACE Call;datatype=ExtensionObject\";\nmsg16.topic = \"ns=1;s=TRACE Call Leg;datatype=ExtensionObject\";\nmsg17.topic = \"ns=1;s=TRACE Device GPO;datatype=ExtensionObject\";\nmsg18.topic = \"ns=1;s=TRACE Device GPI;datatype=ExtensionObject\";\nmsg19.topic = \"ns=1;s=TRACE Device Account;datatype=ExtensionObject\";\nmsg20.topic = \"ns=1;s=TRACE Open Door;datatype=ExtensionObject\";\n\nconst delay = (/** @type {number} */ ms) => new Promise(res => context.set(\"timer\", setTimeout(res, ms)))\n\nconst waitingTime = 1000;\n\nconsole.log('#1: Subscribe GET Calls Request.');\nnode.send([msg1, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#2: Subscribe GET Call Legs Request.');\nnode.send([null, msg2, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#3: Subscribe GET Audio Messages Request.');\nnode.send([null, null, msg3, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#4: Subscribe GET Groups Request.');\nnode.send([null, null, null, msg4, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#5: Subscribe GET Directory Request.');\nnode.send([null, null, null, null, msg5, null, null, null, null, null, \n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#6: Subscribe GET Platform Version Request.');\nnode.send([null, null, null, null, null, msg6, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#7: Subscribe GET Device Accounts Request.');\nnode.send([null, null, null, null, null, null, msg7, null, null, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#8: Subscribe GET Net Interfaces Request.');\nnode.send([null, null, null, null, null, null, null, msg8, null, null,\n          null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#9: Subscribe GET Queues Request.');\nnode.send([null, null, null, null, null, null, null, null, msg9, null,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#10: Subscribe POST Open Door Request.');\nnode.send([null, null, null, null, null, null, null, null, null, msg10,\n           null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#11: Subscribe POST Key Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           msg11, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#12: Subscribe POST Calls Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, msg12, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#13: Subscribe DELETE Calls Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, msg13, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#14: Subscribe DELETE Call Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, msg14, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#15: Subscribe TRACE Call Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, msg15, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#16: Subscribe TRACE Call Leg Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, msg16, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#17: Subscribe TRACE Device GPO Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n    null, null, null, null, null, null, msg17, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#18: Subscribe TRACE Device GPI Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n          null, null, null, null, null, null, null, msg18, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#19: Subscribe TRACE Device Account Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, msg19, null]);\nawait delay(waitingTime);\n\n\nconsole.log('#20: Subscribe TRACE Open Door Request.');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, msg20]);\nawait delay(waitingTime);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "outputs": 20,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1780,
+        "wires": [
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ],
+            [
+                "0641fca503d34313"
+            ]
+        ]
+    },
+    {
+        "id": "c6cd1ad71fa96e3f",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Client Requests",
+        "func": "\nif (msg.topic == \"ns=1;s=GET Calls;datatype=ExtensionObject\")\n{\n    var from_dirno = msg.payload[\"from_dirno\"];\n\n    if ( (from_dirno != null) &&\n         (from_dirno != '0') )\n    {\n        return [msg,  null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Call Legs;datatype=ExtensionObject\")\n{  \n    var from_dirno = msg.payload[\"from_dirno\"];\n\n    if ((from_dirno != null) &&\n        (from_dirno != '0'))\n    {\n        return [null, msg,  null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Audio Messages;datatype=ExtensionObject\")\n{\n    var get_update = msg.payload[\"get_value\"]\n\n    if (get_update == true)\n    {\n        return [null, null, msg,  null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Groups;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, msg,  null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Directory;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, null, msg,  null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET System Platform Version;datatype=ExtensionObject\")\n{\n    var get_update = msg.payload[\"get_value\"]\n\n    if (get_update == true)\n    {\n        return [null, null, null, null, null, msg,  null, null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Device Accounts;datatype=ExtensionObject\")\n{\n    var get_update = msg.payload[\"get_value\"]\n\n    if (get_update == true)\n    {\n        return [null, null, null, null, null, null, msg,  null, null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Net Interfaces;datatype=ExtensionObject\")\n{\n    var get_update = msg.payload[\"get_value\"]\n\n    if (get_update == true)\n    {\n        return [null, null, null, null, null, null, null, msg,  null, null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=GET Call Queues;datatype=ExtensionObject\")\n{\n    var queue_dirno = msg.payload[\"queue_dirno\"];\n\n    if ((queue_dirno != null) &&\n        (queue_dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, msg,  null,\n                null, null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=POST Open Door;datatype=ExtensionObject\")\n{\n    var from_dirno = msg.payload[\"from_dirno\"];\n\n    if ((from_dirno != null) &&\n        (from_dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, msg,\n                null, null, null, null, null, null, null, null, null, null]; \n    }\n}\n\nelse if (msg.topic == \"ns=1;s=POST Key;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                msg,  null, null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=POST Calls;datatype=ExtensionObject\")\n{\n    var from_dirno = msg.payload[\"from_dirno\"];\n\n    if ((from_dirno != null) &&\n        (from_dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, msg,  null, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=DELETE Calls;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, msg, null, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=DELETE Call Id;datatype=ExtensionObject\")\n{\n    var call_id = msg.payload[\"call_id\"];\n\n    if ((call_id != null) &&\n        (call_id != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n            null, null, null, msg, null, null, null, null, null, null];\n    }\n}\n\nelse if (msg.topic == \"ns=1;s=TRACE Call;datatype=ExtensionObject\")\n{\n    var set_update = msg.payload[\"set_value\"]\n\n    if (set_update == true)\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, msg,  null, null, null, null, null];\n    }\n}\nelse if (msg.topic == \"ns=1;s=TRACE Call Leg;datatype=ExtensionObject\")\n{\n    var set_update = msg.payload[\"set_value\"]\n\n    if (set_update == true)\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, msg,  null, null, null, null];\n    }\n}\nelse if (msg.topic == \"ns=1;s=TRACE Device GPO;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, msg,  null, null, null];\n    }\n}\nelse if (msg.topic == \"ns=1;s=TRACE Device GPI;datatype=ExtensionObject\")\n{\n    var dirno = msg.payload[\"dirno\"];\n\n    if ((dirno != null) &&\n        (dirno != '0'))\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, msg,  null, null];\n    }\n}\nelse if (msg.topic == \"ns=1;s=TRACE Device Account;datatype=ExtensionObject\")\n{\n    var set_update = msg.payload[\"set_value\"]\n    if (set_update == true)\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, msg,  null];\n    }\n}\nelse if (msg.topic == \"ns=1;s=TRACE Open Door;datatype=ExtensionObject\")\n{\n    var set_update = msg.payload[\"set_value\"]\n    if (set_update == true)\n    {\n        return [null, null, null, null, null, null, null, null, null, null,\n                null, null, null, null, null, null, null, null, null, msg ];\n    }\n}\n\n",
+        "outputs": 20,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 3380,
+        "wires": [
+            [
+                "14863bb256d5c805"
+            ],
+            [
+                "062617c728995d43"
+            ],
+            [
+                "e979c4e0f7abf775"
+            ],
+            [
+                "73197efae7d6e6e0"
+            ],
+            [
+                "923849402cb66ff0"
+            ],
+            [
+                "76e624edc3d8fc74"
+            ],
+            [
+                "7385b258a58fa227"
+            ],
+            [
+                "673e35f499b6f553"
+            ],
+            [
+                "43556190e61aa07a"
+            ],
+            [
+                "61dc6c2e370b80f5"
+            ],
+            [
+                "9b1d9b5f389f22d6"
+            ],
+            [
+                "26c88d8f7ba63c82"
+            ],
+            [
+                "b778b599b76108ae"
+            ],
+            [
+                "237f71312fe0d261"
+            ],
+            [
+                "bb20c4e5eff2cdcf"
+            ],
+            [
+                "2c3540905ad4e327"
+            ],
+            [
+                "54569ff4006f02ec"
+            ],
+            [
+                "6616831f8681d587"
+            ],
+            [
+                "a0634d8b0ad25893"
+            ],
+            [
+                "015f6a745de65d00"
+            ]
+        ]
+    },
+    {
+        "id": "cf9f827d06258e01",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.calls",
+        "name": "com.zenitel.calls",
+        "x": 1280,
+        "y": 1970,
+        "wires": [
+            [
+                "6d56e6a01bc61a01"
+            ]
+        ]
+    },
+    {
+        "id": "c37b431b03d26972",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Calls List",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Calls List",
+        "x": 1680,
+        "y": 1970,
+        "wires": [
+            [
+                "1c0318a837845406"
+            ]
+        ]
+    },
+    {
+        "id": "eafc5956b77a3adb",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "f1ab036094358fe5",
+        "procedure": "com.zenitel.call_legs",
+        "name": "com.zenitel.call_legs",
+        "x": 1340,
+        "y": 2120,
+        "wires": [
+            [
+                "873ccf7a8c1eb67e"
+            ]
+        ]
+    },
+    {
+        "id": "793de262429aa3ee",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Call Legs List",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Call Legs List",
+        "x": 1750,
+        "y": 2120,
+        "wires": [
+            [
+                "d91552d67a0aa83f"
+            ]
+        ]
+    },
+    {
+        "id": "062617c728995d43",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Call Legs",
+        "func": "var from_dirno = msg.payload[\"from_dirno\"];\nvar to_dirno = msg.payload[\"to_dirno\"];\nvar dirno = msg.payload[\"dirno\"];\nvar leg_id = msg.payload[\"leg_id\"];\nvar call_id = msg.payload[\"call_id\"];\nvar state = msg.payload[\"state\"];\nvar leg_role = msg.payload[\"leg_role\"];\n\nvar mess =\n{\n    payload:\n    {\n        'from_dirno': from_dirno,\n        'to_dirno': to_dirno,\n        'dirno': dirno,\n        'leg_id': leg_id,        \n        'call_id': call_id,\n        'state': state,\n        'leg_role': leg_role\n    }\n}\n\n// Only add entry if value is defined\n\n//---- from_dirno\n\nif ( (from_dirno == null) ||\n     (from_dirno == '') )\n{\n    delete mess.payload['from_dirno'];\n}\n\n//---- to_dirno\n\nif ( (to_dirno == null) ||\n     (to_dirno == '') )\n{\n    delete mess.payload['to_dirno'];\n}\n\n//---- dirno\n\nif ((dirno == null) ||\n    (dirno == '')) {\n    delete mess.payload['dirno'];\n}\n\n//---- leg_id\n\nif ((leg_id == null) ||\n    (leg_id == '')) {\n    delete mess.payload['leg_id'];\n}\n\n//---- call_id\n\nif ( (call_id == null) ||\n     (call_id == '') )\n{\n    delete mess.payload['call_id'];\n}\n\n//---- state\n\nif ( (state == null) ||\n     (state == '') )\n{\n    delete mess.payload['state'];\n}\n\n//---- leg_role\n\nif ((leg_role == null) ||\n    (leg_role == '')) {\n    delete mess.payload['leg_role'];\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 2160,
+        "wires": [
+            [
+                "eafc5956b77a3adb",
+                "63fad3ac9e6a80dc"
+            ]
+        ]
+    },
+    {
+        "id": "42a0ae16cee676ac",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input to Write Client",
+        "links": [
+            "2660c4fbb3f45c3c",
+            "3cebc3828dd34c86",
+            "edc4997fafabd166",
+            "733a2c236ed81968",
+            "818a8c4dfce138e1",
+            "bfaea191259581a8",
+            "0f3653f42f8a5c7f",
+            "c5f1af54c9cab379",
+            "168dde6e46c62d5a",
+            "2c3ef92f7624697d",
+            "2712cd6cd10719b9",
+            "1c0318a837845406",
+            "d91552d67a0aa83f",
+            "d830c01947e0b4c0",
+            "11fc549f5ca165a1",
+            "66e6961f90cc19f0",
+            "0acd6485077b0cca",
+            "ffd170c4fcb32fea",
+            "47584b09ee75a2fd",
+            "ebf030e612f5be62",
+            "f9a3b41c0df630c6",
+            "19622435cf6007f2",
+            "c15a3a8b901f3cb9",
+            "7237044a2109d8a2",
+            "609a1b675f6133eb",
+            "cad9c162302e4bab",
+            "311e4f02eae7c414",
+            "16c4490eebef623f",
+            "b995792d0e4cbaa2",
+            "3e6e76879ccc5c3c",
+            "68927b7201be1bd4",
+            "fdc7a880ac102019",
+            "e5be8b076d754099",
+            "a80a926f92e41a44",
+            "bb49bab89936d5a1",
+            "a63b0ccd37c74fcf",
+            "e9b86eb51fe7b589"
+        ],
+        "x": 1485,
+        "y": 960,
+        "wires": [
+            [
+                "99d4b44504dc4fc1"
+            ]
+        ]
+    },
+    {
+        "id": "bfaea191259581a8",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5600,
+        "wires": []
+    },
+    {
+        "id": "0f3653f42f8a5c7f",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5360,
+        "wires": []
+    },
+    {
+        "id": "c5f1af54c9cab379",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5300,
+        "wires": []
+    },
+    {
+        "id": "2c3ef92f7624697d",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 450,
+        "wires": []
+    },
+    {
+        "id": "1c0318a837845406",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1835,
+        "y": 1970,
+        "wires": []
+    },
+    {
+        "id": "d91552d67a0aa83f",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1925,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "8cb0359b5c07a892",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.system.audio_messages",
+        "name": "com.zenitel.system.audio_messages",
+        "x": 1430,
+        "y": 2270,
+        "wires": [
+            [
+                "0864cc0c0df32b30"
+            ]
+        ]
+    },
+    {
+        "id": "e979c4e0f7abf775",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Audio Messages",
+        "func": "//No parameters\nmsg.payload = {};\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 2310,
+        "wires": [
+            [
+                "8cb0359b5c07a892",
+                "49c173779cc63d5f"
+            ]
+        ]
+    },
+    {
+        "id": "dfbe1eec5c8ad90c",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "f1ab036094358fe5",
+        "procedure": "com.zenitel.system.platform.version",
+        "name": "com.zenitel.system.platform.version",
+        "x": 1470,
+        "y": 2720,
+        "wires": [
+            [
+                "70b5d29255e98b7b"
+            ]
+        ]
+    },
+    {
+        "id": "3b683fa3686735f7",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "f1ab036094358fe5",
+        "procedure": "com.zenitel.system.device_accounts",
+        "name": "com.zenitel.system.device_accounts",
+        "x": 1440,
+        "y": 2870,
+        "wires": [
+            [
+                "2e08665316937436"
+            ]
+        ]
+    },
+    {
+        "id": "c365ce97fdb147c1",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Software Version",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save SW Version",
+        "x": 1880,
+        "y": 2720,
+        "wires": [
+            [
+                "2660c4fbb3f45c3c"
+            ]
+        ]
+    },
+    {
+        "id": "b29e7fb6afb868d5",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Device Accounts",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Accounts",
+        "x": 1870,
+        "y": 2870,
+        "wires": [
+            [
+                "3cebc3828dd34c86"
+            ]
+        ]
+    },
+    {
+        "id": "548b8f9150f9285b",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "f1ab036094358fe5",
+        "procedure": "com.zenitel.system.info.net_interfaces",
+        "name": "com.zenitel.system.info.net_interfaces",
+        "x": 1420,
+        "y": 3030,
+        "wires": [
+            [
+                "65a93415c77225b0"
+            ]
+        ]
+    },
+    {
+        "id": "2cfcf84bbdd0f73f",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Net Interfaces",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Net Interfaces",
+        "x": 1890,
+        "y": 3030,
+        "wires": [
+            [
+                "edc4997fafabd166"
+            ]
+        ]
+    },
+    {
+        "id": "2660c4fbb3f45c3c",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 2035,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "3cebc3828dd34c86",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 2035,
+        "y": 2870,
+        "wires": []
+    },
+    {
+        "id": "edc4997fafabd166",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 2045,
+        "y": 3030,
+        "wires": []
+    },
+    {
+        "id": "c20b06356d0956cb",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.groups",
+        "name": "com.zenitel.groups",
+        "x": 1320,
+        "y": 2420,
+        "wires": [
+            [
+                "9ba88fde7f6663a5"
+            ]
+        ]
+    },
+    {
+        "id": "73197efae7d6e6e0",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Groups",
+        "func": "var dirno = msg.payload[\"dirno\"];\nvar verbose = msg.payload[\"verbose\"];\n\nvar mess =\n{\n    payload:\n    {\n        'dirno': dirno,\n        'verbose': verbose\n    }\n}\n\n// Only add entry if value is defined\n\n//---- dirno\n\nif ((dirno == null) ||\n    (dirno == '')) {\n    delete mess.payload['dirno'];\n}\n\n//---- verbose\n\nif (verbose == null) {\n    delete mess.payload['verbose'];\n}\n\ndelete mess.payload['get'];\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 2460,
+        "wires": [
+            [
+                "c20b06356d0956cb",
+                "2f406d4d7823b956"
+            ]
+        ]
+    },
+    {
+        "id": "bbdbe787a3baa6d9",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Writing Client",
+        "info": "",
+        "x": 1620,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "96e049269bcfd626",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.directory",
+        "name": "com.zenitel.directory",
+        "x": 1330,
+        "y": 2570,
+        "wires": [
+            [
+                "2bfc86cbe7cc91a4"
+            ]
+        ]
+    },
+    {
+        "id": "923849402cb66ff0",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Directory",
+        "func": "//Get dirno from incoming message - msg\nvar dirno = msg.payload[\"dirno\"];\n\n//Create new message\nvar mess =\n{\n    payload:\n    {\n        'dirno': dirno\n    }\n}\n\n// Only add entry if value is defined\n\n//---- dirno\n\nif ((dirno == null) ||\n    (dirno == '')) {\n    delete mess.payload['dirno'];\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 2610,
+        "wires": [
+            [
+                "96e049269bcfd626",
+                "22e2f6eb713e98f9"
+            ]
+        ]
+    },
+    {
+        "id": "76e624edc3d8fc74",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET System Platform Version",
+        "func": "//No parameters\nmsg.payload = {};\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 2760,
+        "wires": [
+            [
+                "dfbe1eec5c8ad90c",
+                "a047092c36938c86"
+            ]
+        ]
+    },
+    {
+        "id": "7385b258a58fa227",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Device Accounts",
+        "func": "//No parameters\nmsg.payload = {};\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 2920,
+        "wires": [
+            [
+                "3b683fa3686735f7",
+                "8a1428ec206087da"
+            ]
+        ]
+    },
+    {
+        "id": "673e35f499b6f553",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Net Interfaces",
+        "func": "//No parameters\nmsg.payload = {};\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 3070,
+        "wires": [
+            [
+                "548b8f9150f9285b",
+                "4e03536409ddf5b9"
+            ]
+        ]
+    },
+    {
+        "id": "65ce51f4f225c186",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Client Request  Out",
+        "mode": "link",
+        "links": [
+            "9829bd6c7bfa8e3b"
+        ],
+        "x": 955,
+        "y": 1770,
+        "wires": []
+    },
+    {
+        "id": "9829bd6c7bfa8e3b",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Client Request in",
+        "links": [
+            "65ce51f4f225c186"
+        ],
+        "x": 125,
+        "y": 3380,
+        "wires": [
+            [
+                "c6cd1ad71fa96e3f"
+            ]
+        ]
+    },
+    {
+        "id": "e65532cac3134305",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.call_queues",
+        "name": "com.zenitel.call.queues",
+        "x": 1370,
+        "y": 3180,
+        "wires": [
+            [
+                "1a921b2d67c22f46"
+            ]
+        ]
+    },
+    {
+        "id": "43556190e61aa07a",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build GET Call Queues",
+        "func": "//Get queue_dirno from incoming message - msg\nvar queue_dirno = msg.payload[\"queue_dirno\"];\n\n//Create new message\nvar mess =\n{\n    payload:\n    {\n        'queue_dirno': queue_dirno\n    }\n}\n\n// Only add entry if value is defined\n\n//---- dirno\n\nif ((queue_dirno == null) ||\n    (queue_dirno == '')) {\n    delete mess.payload['queue_dirno'];\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 3220,
+        "wires": [
+            [
+                "e65532cac3134305",
+                "99e871d367782869"
+            ]
+        ]
+    },
+    {
+        "id": "de4105e84e8a9dbd",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.calls.call.open_door.post",
+        "name": "com.zenitel.calls.call.open_door.post",
+        "x": 1570,
+        "y": 3330,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61dc6c2e370b80f5",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build POST Open Door",
+        "func": "//Get data from incoming message - msg\n\nvar from_dirno = msg.payload[\"from_dirno\"];\n\nvar mess = {};\n\nif ((from_dirno == null) ||\n    (from_dirno == \"\")) {\n    // Do Nothing\n    mess =\n    {\n        payload:\n        {\n            'from_dirno': '0'\n        }\n    }\n}\nelse {\n    mess =\n    {\n        payload:\n        {\n            'from_dirno': from_dirno\n        }\n    }\n}\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 3380,
+        "wires": [
+            [
+                "a94f7072a99b2eb4",
+                "48bff6431fd3c43f"
+            ]
+        ]
+    },
+    {
+        "id": "050c25fc1ff8267a",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.devices.device.key.post",
+        "name": "com.zenitel.devices.device.key.post",
+        "x": 1360,
+        "y": 3500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b1d9b5f389f22d6",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Build POST Key",
+        "func": "var dirno = msg.payload[\"dirno\"];\nvar id    = msg.payload[\"id\"];\nvar edge  = msg.payload[\"edge\"];\n\n//Create message\nvar mess =\n{\n    payload:\n    {\n        'dirno': dirno,\n        'id': id,\n        'edge' : edge\n    }\n}\n\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 3550,
+        "wires": [
+            [
+                "06da60dfcfb97625",
+                "050c25fc1ff8267a"
+            ]
+        ]
+    },
+    {
+        "id": "c2b6605bf4980f3e",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear Client Requests",
+        "func": "var msg1  = {};\nvar msg2  = {};\nvar msg3  = {};\nvar msg4  = {};\nvar msg5  = {};\nvar msg6  = {};\nvar msg7  = {};\nvar msg8  = {};\nvar msg9  = {};\nvar msg10 = {};\nvar msg11 = {};\nvar msg12 = {};\nvar msg13 = {};\nvar msg14 = {};\nvar msg15 = {};\nvar msg16 = {};\nvar msg17 = {};\nvar msg18 = {};\nvar msg19 = {};\nvar msg20 = {};\n\n\nconst delay = (/** @type {number} */ ms) => new Promise(res => context.set(\"timer\", setTimeout(res, ms)))\nconst waitingTime = 1000;\n\nmsg1.topic  = \"ns=1;s=GET Calls;datatype=ExtensionObject\";\nmsg2.topic  = \"ns=1;s=GET Call Legs;datatype=ExtensionObject\";\nmsg3.topic  = \"ns=1;s=GET Audio Messages;datatype=ExtensionObject\";\nmsg4.topic  = \"ns=1;s=GET Groups;datatype=ExtensionObject\";\nmsg5.topic  = \"ns=1;s=GET Directory;datatype=ExtensionObject\";\nmsg6.topic  = \"ns=1;s=GET System Platform Version;datatype=ExtensionObject\";\nmsg7.topic  = \"ns=1;s=GET Device Accounts;datatype=ExtensionObject\";\nmsg8.topic  = \"ns=1;s=GET Net Interfaces;datatype=ExtensionObject\";\nmsg9.topic  = \"ns=1;s=GET Call Queues;datatype=ExtensionObject\";\nmsg10.topic = \"ns=1;s=POST Open Door;datatype=ExtensionObject\";\nmsg11.topic = \"ns=1;s=POST Key;datatype=ExtensionObject\";\nmsg12.topic = \"ns=1;s=POST Calls;datatype=ExtensionObject\";\nmsg13.topic = \"ns=1;s=DELETE Calls;datatype=ExtensionObject\";\nmsg14.topic = \"ns=1;s=DELETE Call Id;datatype=ExtensionObject\";\nmsg15.topic = \"ns=1;s=TRACE Call;datatype=ExtensionObject\";\nmsg16.topic = \"ns=1;s=TRACE Call Leg;datatype=ExtensionObject\";\nmsg17.topic = \"ns=1;s=TRACE Device GPO;datatype=ExtensionObject\";\nmsg18.topic = \"ns=1;s=TRACE Device GPI;datatype=ExtensionObject\";\nmsg19.topic = \"ns=1;s=TRACE Device Account;datatype=ExtensionObject\";\nmsg20.topic = \"ns=1;s=TRACE Open Door;datatype=ExtensionObject\";\n\n\nconsole.log('Clear Client Requests #1');\nnode.send([msg1, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #2');\nnode.send([null, msg2, null, null, null, null, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #3');\nnode.send([null, null, msg3, null, null, null, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #4');\nnode.send([null, null, null, msg4, null, null, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #5');\nnode.send([null, null, null, null, msg5, null, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #6');\nnode.send([null, null, null, null, null, msg6, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #7');\nnode.send([null, null, null, null, null, null, msg7, null, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #8');\nnode.send([null, null, null, null, null, null, null, msg8, null, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #9');\nnode.send([null, null, null, null, null, null, null, null, msg9, null,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #10');\nnode.send([null, null, null, null, null, null, null, null, null, msg10,\n        null, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #11');\nnode.send([null,  null, null, null, null, null, null, null, null, null,\n        msg11, null, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #12');\nnode.send([null, null,  null, null, null, null, null, null, null, null,\n        null, msg12, null, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #13');\nnode.send([null, null, null,  null, null, null, null, null, null, null,\n        null, null, msg13, null, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #14');\nnode.send([null, null, null, null,  null, null, null, null, null, null,\n        null, null, null, msg14, null, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #15');\nnode.send([null, null, null, null, null,  null, null, null, null, null,\n        null, null, null, null, msg15, null, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #16');\nnode.send([null, null, null, null, null, null,  null, null, null, null,\n        null, null, null, null, null, msg16, null, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #17');\nnode.send([null, null, null, null, null, null, null,  null, null, null,\n        null, null, null, null, null, null, msg17, null, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #18');\nnode.send([null, null, null, null, null, null, null, null,  null, null,\n        null, null, null, null, null, null, null, msg18, null, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #19');\nnode.send([null, null, null, null, null, null, null, null, null,  null,\n        null, null, null, null, null, null, null, null, msg19, null, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Clear Client Requests #20');\nnode.send([null, null, null, null, null, null, null, null, null, null,\n        null, null, null, null, null, null, null, null, null, msg20, null]);\nawait delay(waitingTime);\n\n\nconsole.log('Trigger Subscribe Client Requests');\nmsg.topic = \"Subscribe Client Requests\"\n\nnode.send([null, null, null, null, null, null, null, null, null, null,\n           null, null, null, null, null, null, null, null, null, null, msg]);\n",
+        "outputs": 21,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 900,
+        "wires": [
+            [
+                "6b3c3b0f20a9836b"
+            ],
+            [
+                "d8bb6f10d0ab4107"
+            ],
+            [
+                "66bd5ff88b06d759"
+            ],
+            [
+                "6ed37ff09218eac4"
+            ],
+            [
+                "9a63dfbdddb2cd2b"
+            ],
+            [
+                "5560aee34247a552"
+            ],
+            [
+                "3c1a17739d6c746e"
+            ],
+            [
+                "8f0bd2f0acd7e9de"
+            ],
+            [
+                "5718ce4978a26897"
+            ],
+            [
+                "cc1197d0186d1b99"
+            ],
+            [
+                "82abadd2278300ee"
+            ],
+            [
+                "79035f5d5f09872f"
+            ],
+            [
+                "7b226ef8578245d4"
+            ],
+            [
+                "6235d2bc2f4a3a1c"
+            ],
+            [
+                "91c33492b42fc711"
+            ],
+            [
+                "7790131a6abd44b0"
+            ],
+            [
+                "f3443d6dd93b876a"
+            ],
+            [
+                "b3e5b18d4e8b1119"
+            ],
+            [
+                "ad4c1d5cb23c6502"
+            ],
+            [
+                "087b0adb97b95d31"
+            ],
+            [
+                "548000d724aeb215"
+            ]
+        ]
+    },
+    {
+        "id": "8484ca88dfad5777",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear Get Calls",
+        "links": [
+            "6b3c3b0f20a9836b",
+            "ee2da46304c9db33"
+        ],
+        "x": 765,
+        "y": 450,
+        "wires": [
+            [
+                "e3cabef0dd32ea15"
+            ]
+        ]
+    },
+    {
+        "id": "ee2da46304c9db33",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Calls",
+        "mode": "link",
+        "links": [
+            "8484ca88dfad5777"
+        ],
+        "x": 1215,
+        "y": 2050,
+        "wires": []
+    },
+    {
+        "id": "6b3c3b0f20a9836b",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Calls",
+        "mode": "link",
+        "links": [
+            "8484ca88dfad5777"
+        ],
+        "x": 615,
+        "y": 450,
+        "wires": []
+    },
+    {
+        "id": "ae22d39c86a8f25c",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Call Legs",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'from_dirno': '0',\n        'to_dirno': '0',\n        'dirno': '0',\n        'leg_id': '0',\n        'call_id': '0',\n        'state': '0',\n        'leg_role': '0'\n    }\n}\n\nmess.topic = \"ns=1;s=GET Call Legs;datatype=ExtensionObject;typeId=ns=3;i=3114\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 500,
+        "wires": [
+            [
+                "2712cd6cd10719b9"
+            ]
+        ]
+    },
+    {
+        "id": "2712cd6cd10719b9",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "db8d63847fbce92e",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Call Legs",
+        "links": [
+            "01b575c38a586fb8",
+            "eba75dcb66dcb2e0",
+            "63fad3ac9e6a80dc",
+            "d8bb6f10d0ab4107"
+        ],
+        "x": 765,
+        "y": 500,
+        "wires": [
+            [
+                "ae22d39c86a8f25c"
+            ]
+        ]
+    },
+    {
+        "id": "9bac0a17dfb11f07",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Audio Messages",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'get_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=GET Audio Messages;datatype=ExtensionObject;typeId=ns=3;i=3115\";\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 550,
+        "wires": [
+            [
+                "d830c01947e0b4c0"
+            ]
+        ]
+    },
+    {
+        "id": "d830c01947e0b4c0",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 550,
+        "wires": []
+    },
+    {
+        "id": "67b372f652d6dded",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Groups",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'dirno': '0',\n        'verbose' : false\n    }\n}\n\nmess.topic = \"ns=1;s=GET Groups;datatype=ExtensionObject;typeId=ns=3;i=3116\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 600,
+        "wires": [
+            [
+                "11fc549f5ca165a1"
+            ]
+        ]
+    },
+    {
+        "id": "11fc549f5ca165a1",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "66ae6e00270c60ac",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Directory",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'dirno' : '0'\n    }\n}\n\nmess.topic = \"ns=1;s=GET Directory;datatype=ExtensionObject;typeId=ns=3;i=3117\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 650,
+        "wires": [
+            [
+                "66e6961f90cc19f0"
+            ]
+        ]
+    },
+    {
+        "id": "66e6961f90cc19f0",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 650,
+        "wires": []
+    },
+    {
+        "id": "2d2389ba1c6f5201",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Audio Messages",
+        "links": [
+            "eba75dcb66dcb2e0",
+            "49c173779cc63d5f",
+            "66bd5ff88b06d759"
+        ],
+        "x": 765,
+        "y": 550,
+        "wires": [
+            [
+                "9bac0a17dfb11f07"
+            ]
+        ]
+    },
+    {
+        "id": "331de386496b4b64",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Groups",
+        "links": [
+            "01b575c38a586fb8",
+            "2f406d4d7823b956",
+            "6ed37ff09218eac4"
+        ],
+        "x": 765,
+        "y": 600,
+        "wires": [
+            [
+                "67b372f652d6dded"
+            ]
+        ]
+    },
+    {
+        "id": "1c905fcb003faae5",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Directory",
+        "links": [
+            "22e2f6eb713e98f9",
+            "9a63dfbdddb2cd2b"
+        ],
+        "x": 765,
+        "y": 650,
+        "wires": [
+            [
+                "66ae6e00270c60ac"
+            ]
+        ]
+    },
+    {
+        "id": "63fad3ac9e6a80dc",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Call Legs",
+        "mode": "link",
+        "links": [
+            "db8d63847fbce92e"
+        ],
+        "x": 1255,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "49c173779cc63d5f",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Audio Messages",
+        "mode": "link",
+        "links": [
+            "2d2389ba1c6f5201"
+        ],
+        "x": 1295,
+        "y": 2350,
+        "wires": []
+    },
+    {
+        "id": "2f406d4d7823b956",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Groups",
+        "mode": "link",
+        "links": [
+            "331de386496b4b64"
+        ],
+        "x": 1245,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "22e2f6eb713e98f9",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Directory",
+        "mode": "link",
+        "links": [
+            "1c905fcb003faae5"
+        ],
+        "x": 1245,
+        "y": 2650,
+        "wires": []
+    },
+    {
+        "id": "d8bb6f10d0ab4107",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Call Legs",
+        "mode": "link",
+        "links": [
+            "db8d63847fbce92e"
+        ],
+        "x": 615,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "66bd5ff88b06d759",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Audio Messages",
+        "mode": "link",
+        "links": [
+            "2d2389ba1c6f5201"
+        ],
+        "x": 615,
+        "y": 550,
+        "wires": []
+    },
+    {
+        "id": "6ed37ff09218eac4",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Groups",
+        "mode": "link",
+        "links": [
+            "331de386496b4b64"
+        ],
+        "x": 615,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9a63dfbdddb2cd2b",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Directory",
+        "mode": "link",
+        "links": [
+            "1c905fcb003faae5"
+        ],
+        "x": 615,
+        "y": 650,
+        "wires": []
+    },
+    {
+        "id": "5560aee34247a552",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET System Platform Version",
+        "mode": "link",
+        "links": [
+            "e2271df5690c5cef"
+        ],
+        "x": 615,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3c1a17739d6c746e",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Device Accounts",
+        "mode": "link",
+        "links": [
+            "02f6a0cba3907046"
+        ],
+        "x": 615,
+        "y": 750,
+        "wires": []
+    },
+    {
+        "id": "8f0bd2f0acd7e9de",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Net Interfaces",
+        "mode": "link",
+        "links": [
+            "c542b07475f6af04"
+        ],
+        "x": 615,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5718ce4978a26897",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Call Queues",
+        "mode": "link",
+        "links": [
+            "d9092119aefc410e"
+        ],
+        "x": 615,
+        "y": 850,
+        "wires": []
+    },
+    {
+        "id": "cc1197d0186d1b99",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Open Door",
+        "mode": "link",
+        "links": [
+            "4745deb5e33df8f7"
+        ],
+        "x": 615,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "82abadd2278300ee",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Key",
+        "mode": "link",
+        "links": [
+            "2c2d302c11a039de"
+        ],
+        "x": 615,
+        "y": 950,
+        "wires": []
+    },
+    {
+        "id": "d396aa6ef04a5bd8",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Calls",
+        "info": "",
+        "x": 1340,
+        "y": 2050,
+        "wires": []
+    },
+    {
+        "id": "baf624648ca79b2d",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Call Legs",
+        "info": "",
+        "x": 1390,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "2d33d9d54bc81310",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Audio Messages",
+        "info": "",
+        "x": 1490,
+        "y": 2350,
+        "wires": []
+    },
+    {
+        "id": "68b175c8518f28eb",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Groups",
+        "info": "",
+        "x": 1380,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "a84c1d5425f0ee5d",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Directory",
+        "info": "",
+        "x": 1400,
+        "y": 2650,
+        "wires": []
+    },
+    {
+        "id": "225d1d519aed3fe5",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Get System Platform Version",
+        "func": "var mess =\n{\n    payload:\n    {\n        'get_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=GET System Platform Version;datatype=ExtensionObject;typeId=ns=3;i=3118\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "0acd6485077b0cca"
+            ]
+        ]
+    },
+    {
+        "id": "0acd6485077b0cca",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "1a57dce037a7162d",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Device Accounts",
+        "func": "var mess =\n{\n    payload:\n    {\n        'get_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=GET Device Accounts;datatype=ExtensionObject;typeId=ns=3;i=3119\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 750,
+        "wires": [
+            [
+                "ffd170c4fcb32fea"
+            ]
+        ]
+    },
+    {
+        "id": "ffd170c4fcb32fea",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 750,
+        "wires": []
+    },
+    {
+        "id": "e840ef0b15ed28e9",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Net Interfaces",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'get_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=GET Net Interfaces;datatype=ExtensionObject;typeId=ns=3;i=3120\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 800,
+        "wires": [
+            [
+                "47584b09ee75a2fd"
+            ]
+        ]
+    },
+    {
+        "id": "47584b09ee75a2fd",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "289bf3a9a7126569",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Call Queues",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'queue_dirno': '0',\n    }\n}\n\nmess.topic = \"ns=1;s=GET Call Queues;datatype=ExtensionObject;typeId=ns=3;i=3121\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 850,
+        "wires": [
+            [
+                "ebf030e612f5be62"
+            ]
+        ]
+    },
+    {
+        "id": "ebf030e612f5be62",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 850,
+        "wires": []
+    },
+    {
+        "id": "a0d7844f1c289f46",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Open Door",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'from_dirno' : '0',\n    }\n}\n\nmess.topic = \"ns=1;s=POST Open Door;datatype=ExtensionObject;typeId=ns=3;i=3122\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 900,
+        "wires": [
+            [
+                "f9a3b41c0df630c6"
+            ]
+        ]
+    },
+    {
+        "id": "f9a3b41c0df630c6",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1901a44e4103a030",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Key",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'dirno' : '0',\n        'id' : '0',\n        'edge' : '0'\n    }\n}\n\nmess.topic = \"ns=1;s=POST Key;datatype=ExtensionObject;typeId=ns=3;i=3123\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 950,
+        "wires": [
+            [
+                "19622435cf6007f2"
+            ]
+        ]
+    },
+    {
+        "id": "19622435cf6007f2",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 950,
+        "wires": []
+    },
+    {
+        "id": "e2271df5690c5cef",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET System Platform Version",
+        "links": [
+            "5560aee34247a552",
+            "a047092c36938c86"
+        ],
+        "x": 765,
+        "y": 700,
+        "wires": [
+            [
+                "225d1d519aed3fe5"
+            ]
+        ]
+    },
+    {
+        "id": "02f6a0cba3907046",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Device Accounts",
+        "links": [
+            "3c1a17739d6c746e",
+            "8a1428ec206087da"
+        ],
+        "x": 765,
+        "y": 750,
+        "wires": [
+            [
+                "1a57dce037a7162d"
+            ]
+        ]
+    },
+    {
+        "id": "c542b07475f6af04",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Net Interfaces",
+        "links": [
+            "8f0bd2f0acd7e9de",
+            "4e03536409ddf5b9"
+        ],
+        "x": 765,
+        "y": 800,
+        "wires": [
+            [
+                "e840ef0b15ed28e9"
+            ]
+        ]
+    },
+    {
+        "id": "d9092119aefc410e",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear GET Call Queues",
+        "links": [
+            "5718ce4978a26897",
+            "99e871d367782869"
+        ],
+        "x": 765,
+        "y": 850,
+        "wires": [
+            [
+                "289bf3a9a7126569"
+            ]
+        ]
+    },
+    {
+        "id": "4745deb5e33df8f7",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear POST Open Door",
+        "links": [
+            "cc1197d0186d1b99",
+            "a94f7072a99b2eb4"
+        ],
+        "x": 765,
+        "y": 900,
+        "wires": [
+            [
+                "a0d7844f1c289f46"
+            ]
+        ]
+    },
+    {
+        "id": "2c2d302c11a039de",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear POST Key",
+        "links": [
+            "06da60dfcfb97625",
+            "82abadd2278300ee"
+        ],
+        "x": 765,
+        "y": 950,
+        "wires": [
+            [
+                "1901a44e4103a030"
+            ]
+        ]
+    },
+    {
+        "id": "a047092c36938c86",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET System Platform Version",
+        "mode": "link",
+        "links": [
+            "e2271df5690c5cef"
+        ],
+        "x": 1345,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "8a1428ec206087da",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Device Accounts",
+        "mode": "link",
+        "links": [
+            "02f6a0cba3907046"
+        ],
+        "x": 1305,
+        "y": 2950,
+        "wires": []
+    },
+    {
+        "id": "4e03536409ddf5b9",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Net Interfaces",
+        "mode": "link",
+        "links": [
+            "c542b07475f6af04"
+        ],
+        "x": 1285,
+        "y": 3110,
+        "wires": []
+    },
+    {
+        "id": "a94f7072a99b2eb4",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Open Door",
+        "mode": "link",
+        "links": [
+            "4745deb5e33df8f7"
+        ],
+        "x": 1275,
+        "y": 3430,
+        "wires": []
+    },
+    {
+        "id": "99e871d367782869",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear GET Call Queues",
+        "mode": "link",
+        "links": [
+            "d9092119aefc410e"
+        ],
+        "x": 1275,
+        "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "06da60dfcfb97625",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Key",
+        "mode": "link",
+        "links": [
+            "2c2d302c11a039de"
+        ],
+        "x": 1225,
+        "y": 3600,
+        "wires": []
+    },
+    {
+        "id": "d9f75ee34b23be44",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET System Platform Version",
+        "info": "",
+        "x": 1540,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "dd8d8f486a4148a4",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Device Accounts",
+        "info": "",
+        "x": 1480,
+        "y": 2950,
+        "wires": []
+    },
+    {
+        "id": "581816b33836173b",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Net Interfaces",
+        "info": "",
+        "x": 1470,
+        "y": 3110,
+        "wires": []
+    },
+    {
+        "id": "13b895044984e1a7",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear GET Call Queues",
+        "info": "",
+        "x": 1430,
+        "y": 3260,
+        "wires": []
+    },
+    {
+        "id": "b8f1272a84dd7492",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Open Door",
+        "info": "",
+        "x": 1420,
+        "y": 3430,
+        "wires": []
+    },
+    {
+        "id": "245665efa221c2b9",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Key",
+        "info": "",
+        "x": 1350,
+        "y": 3600,
+        "wires": []
+    },
+    {
+        "id": "156c48aa61d52f2f",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "-------------------- Clear All Client Requests --------------------",
+        "info": "",
+        "x": 240,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "26c88d8f7ba63c82",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Check POST Calls",
+        "func": "var from_dirno = msg.payload[\"from_dirno\"];\nvar to_dirno = msg.payload[\"to_dirno\"];\nvar act = msg.payload[\"act\"];\nvar verbose = msg.payload[\"verbose\"];\nvar mess = {};\n\nif ( (from_dirno == null) ||\n     (from_dirno == \"\") )\n{\n    // Do Nothing\n    mess =\n    {\n        payload:\n        {\n            'from_dirno': '0'\n        }\n    }\n}\nelse\n{\n    mess =\n    { \n        payload:\n        {   'from_dirno' : from_dirno,\n            'to_dirno'   : to_dirno,\n            'action'     : act,\n            'verbose'    : verbose\n        }\n    }\n}\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 3720,
+        "wires": [
+            [
+                "720a467f4555b210",
+                "f6458adeef870ad4"
+            ]
+        ]
+    },
+    {
+        "id": "c02c01e77299f2c1",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.calls.post",
+        "name": "com.zenitel.calls.post",
+        "x": 1570,
+        "y": 3670,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b778b599b76108ae",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Check DELETE Calls",
+        "func": "var dirno = msg.payload[\"dirno\"];\nvar mess = {};\n\nif ((dirno == null) ||\n    (dirno == \"\"))\n{\n    mess =\n    {\n        payload:\n        {\n            'dirno': '0'\n        }\n    }\n}\nelse\n{\n    mess =\n    { \n        payload:\n        {\n            'dirno': dirno\n        }\n    }\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 3880,
+        "wires": [
+            [
+                "aa019413981dfb1e",
+                "eaca13c3ace53e47"
+            ]
+        ]
+    },
+    {
+        "id": "2d575a68ab70604b",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.calls.delete",
+        "name": "com.zenitel.calls.delete",
+        "x": 1590,
+        "y": 3840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "237f71312fe0d261",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Check DELETE Call Id",
+        "func": "var call_id = msg.payload[\"call_id\"];\n\nvar mess = {};\n\nif ((call_id == null) ||\n    (call_id == \"\"))\n{\n    mess =\n    {\n        payload:\n        {\n            'call_id': '0'\n        }\n    }\n}\nelse\n{\n    mess =\n    { \n        payload:\n        {\n           'call_id': call_id\n        }\n    }\n}\n\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 4050,
+        "wires": [
+            [
+                "c3f2b8dcd8d112f0",
+                "f1ebcc69868e2939"
+            ]
+        ]
+    },
+    {
+        "id": "1fb75cdd278751ce",
+        "type": "wamp call",
+        "z": "b4792f36.7b37e",
+        "router": "0da727c664b1f238",
+        "procedure": "com.zenitel.calls.call.delete",
+        "name": "com.zenitel.calls.call.delete",
+        "x": 1600,
+        "y": 4020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79035f5d5f09872f",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Calls",
+        "mode": "link",
+        "links": [
+            "405f6d32f9f091cc"
+        ],
+        "x": 615,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7b226ef8578245d4",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Calls",
+        "mode": "link",
+        "links": [
+            "14442a1dc206b6ce"
+        ],
+        "x": 615,
+        "y": 1050,
+        "wires": []
+    },
+    {
+        "id": "6235d2bc2f4a3a1c",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "62c9af236f96ca10"
+        ],
+        "x": 615,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "818a8c4dfce138e1",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1050,
+        "wires": []
+    },
+    {
+        "id": "a16857c03deea693",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear DELETE Calls",
+        "func": "var mess =\n{\n    payload:\n    {\n        'dirno' : '0'\n    }\n}\n\nmess.topic = \"ns=1;s=DELETE Calls;datatype=ExtensionObject;typeId=ns=3;i=3111\";\nreturn mess;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1050,
+        "wires": [
+            [
+                "818a8c4dfce138e1"
+            ]
+        ]
+    },
+    {
+        "id": "e176dc95ede762f2",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Calls",
+        "func": "var mess =\n{\n    payload:\n    {\n        'from_dirno': '0',\n        'to_dirno': '0',\n        'call_id': '0',\n        'act': '0',\n        'verbose': false\n    }\n}\n\nmess.topic=\"ns=1;s=POST Calls;datatype=ExtensionObject;typeId=ns=3;i=3110\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1000,
+        "wires": [
+            [
+                "733a2c236ed81968"
+            ]
+        ]
+    },
+    {
+        "id": "733a2c236ed81968",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7d20040fd3666f53",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear DELETE Call Id",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'call_id': '0'\n    }\n}\n\nmess.topic = \"ns=1;s=DELETE Call Id;datatype=ExtensionObject;typeId=ns=3;i=3112\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1100,
+        "wires": [
+            [
+                "168dde6e46c62d5a"
+            ]
+        ]
+    },
+    {
+        "id": "168dde6e46c62d5a",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "405f6d32f9f091cc",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear POST Calls",
+        "links": [
+            "79035f5d5f09872f",
+            "720a467f4555b210"
+        ],
+        "x": 765,
+        "y": 1000,
+        "wires": [
+            [
+                "e176dc95ede762f2"
+            ]
+        ]
+    },
+    {
+        "id": "14442a1dc206b6ce",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear DELETE Calls",
+        "links": [
+            "7b226ef8578245d4",
+            "aa019413981dfb1e"
+        ],
+        "x": 765,
+        "y": 1050,
+        "wires": [
+            [
+                "a16857c03deea693"
+            ]
+        ]
+    },
+    {
+        "id": "62c9af236f96ca10",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear DELETE Call Id",
+        "links": [
+            "6235d2bc2f4a3a1c",
+            "c3f2b8dcd8d112f0",
+            "f08e316b6ce02ec6",
+            "f6ac26022ca4b003"
+        ],
+        "x": 765,
+        "y": 1100,
+        "wires": [
+            [
+                "7d20040fd3666f53"
+            ]
+        ]
+    },
+    {
+        "id": "720a467f4555b210",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear POST Calls",
+        "mode": "link",
+        "links": [
+            "405f6d32f9f091cc"
+        ],
+        "x": 1305,
+        "y": 3770,
+        "wires": []
+    },
+    {
+        "id": "b636fa6c53f99122",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear POST Calls",
+        "info": "",
+        "x": 1430,
+        "y": 3770,
+        "wires": []
+    },
+    {
+        "id": "ca1425c5a58e5b4c",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear DELETE Calls",
+        "info": "",
+        "x": 1470,
+        "y": 3940,
+        "wires": []
+    },
+    {
+        "id": "f9e8ef4f8b1ae429",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear DELETE Call Id",
+        "info": "",
+        "x": 1480,
+        "y": 4100,
+        "wires": []
+    },
+    {
+        "id": "aa019413981dfb1e",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Calls",
+        "mode": "link",
+        "links": [
+            "14442a1dc206b6ce"
+        ],
+        "x": 1335,
+        "y": 3940,
+        "wires": []
+    },
+    {
+        "id": "c3f2b8dcd8d112f0",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "62c9af236f96ca10"
+        ],
+        "x": 1335,
+        "y": 4100,
+        "wires": []
+    },
+    {
+        "id": "f6458adeef870ad4",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1350,
+        "y": 3670,
+        "wires": [
+            [
+                "c02c01e77299f2c1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "eaca13c3ace53e47",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 3840,
+        "wires": [
+            [
+                "2d575a68ab70604b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f1ebcc69868e2939",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4020,
+        "wires": [
+            [
+                "1fb75cdd278751ce"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "48bff6431fd3c43f",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1310,
+        "y": 3330,
+        "wires": [
+            [
+                "de4105e84e8a9dbd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7f0a8837b3534794",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Audio Messages",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Audio Messages",
+        "x": 1890,
+        "y": 2270,
+        "wires": [
+            [
+                "609a1b675f6133eb"
+            ]
+        ]
+    },
+    {
+        "id": "609a1b675f6133eb",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 2055,
+        "y": 2270,
+        "wires": []
+    },
+    {
+        "id": "65a93415c77225b0",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1690,
+        "y": 3030,
+        "wires": [
+            [
+                "2cfcf84bbdd0f73f"
+            ]
+        ]
+    },
+    {
+        "id": "2e08665316937436",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1690,
+        "y": 2870,
+        "wires": [
+            [
+                "b29e7fb6afb868d5"
+            ]
+        ]
+    },
+    {
+        "id": "70b5d29255e98b7b",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1700,
+        "y": 2720,
+        "wires": [
+            [
+                "c365ce97fdb147c1"
+            ]
+        ]
+    },
+    {
+        "id": "2bfc86cbe7cc91a4",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1550,
+        "y": 2570,
+        "wires": [
+            [
+                "75578153b6bd659e"
+            ]
+        ]
+    },
+    {
+        "id": "9ba88fde7f6663a5",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1540,
+        "y": 2420,
+        "wires": [
+            [
+                "d552303763f31358"
+            ]
+        ]
+    },
+    {
+        "id": "0864cc0c0df32b30",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1690,
+        "y": 2270,
+        "wires": [
+            [
+                "7f0a8837b3534794"
+            ]
+        ]
+    },
+    {
+        "id": "873ccf7a8c1eb67e",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1560,
+        "y": 2120,
+        "wires": [
+            [
+                "793de262429aa3ee"
+            ]
+        ]
+    },
+    {
+        "id": "6d56e6a01bc61a01",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1480,
+        "y": 1970,
+        "wires": [
+            [
+                "c37b431b03d26972"
+            ]
+        ]
+    },
+    {
+        "id": "75578153b6bd659e",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Directory",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Directory",
+        "x": 1760,
+        "y": 2570,
+        "wires": [
+            [
+                "311e4f02eae7c414"
+            ]
+        ]
+    },
+    {
+        "id": "d552303763f31358",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Groups",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Groups",
+        "x": 1740,
+        "y": 2420,
+        "wires": [
+            [
+                "cad9c162302e4bab"
+            ]
+        ]
+    },
+    {
+        "id": "cad9c162302e4bab",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1885,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "311e4f02eae7c414",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1955,
+        "y": 2570,
+        "wires": []
+    },
+    {
+        "id": "1a921b2d67c22f46",
+        "type": "json",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1680,
+        "y": 3180,
+        "wires": [
+            [
+                "e7c08066613d947b"
+            ]
+        ]
+    },
+    {
+        "id": "e7c08066613d947b",
+        "type": "OpcUa-Item",
+        "z": "b4792f36.7b37e",
+        "item": "ns=1;s=Call Queues List",
+        "datatype": "String",
+        "value": "msg.payload",
+        "name": "Save Call Queues List",
+        "x": 1890,
+        "y": 3180,
+        "wires": [
+            [
+                "16c4490eebef623f"
+            ]
+        ]
+    },
+    {
+        "id": "16c4490eebef623f",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 2035,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "bb20c4e5eff2cdcf",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Call",
+        "func": "var enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true)\n{\n    var callEvent = flow.get(\"CallEventEnabled\");\n    if (! callEvent)\n    {\n        flow.set(\"CallEventEnabled\", true);\n        msg.topic = \"com.zenitel.call\";\n    }\n}\nelse\n{\n    flow.set(\"CallEventEnabled\", false);\n    msg.payload = \"TRACE Call set to false\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 4220,
+        "wires": [
+            [
+                "8178a57534825738",
+                "062422193bf2ad2e"
+            ]
+        ]
+    },
+    {
+        "id": "2c3540905ad4e327",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Call Leg",
+        "func": "var enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true)\n{\n    var callLegEvent = flow.get(\"CallLegEventEnabled\");\n    if (!callLegEvent)\n    {\n        flow.set(\"CallLegEventEnabled\", true);\n        msg.topic = \"com.zenitel.call_leg\";\n    }\n}\nelse\n{\n    flow.set(\"CallLegEventEnabled\", false);\n    msg.payload = \"TRACE Call Leg set to false\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 4380,
+        "wires": [
+            [
+                "becfde15f923c5ff",
+                "b6d7a74e58291328"
+            ]
+        ]
+    },
+    {
+        "id": "54569ff4006f02ec",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Device GPO",
+        "func": "var dirno = msg.payload[\"dirno\"]\nvar enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true)\n{\n    var deviceGPIevent = flow.get(\"GPI_EventEnabled\");\n    if (! deviceGPIevent)\n    {\n        flow.set(\"GPI_EventEnabled\", true);\n        msg.topic = \"com.zenitel.device.\" + dirno + \".gpi\";\n    }\n}\nelse\n{\n    flow.set(\"GPI_EventEnabled\", false);\n    msg.payload = \"TRACE Device GPI set to false\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 4540,
+        "wires": [
+            [
+                "ac922733583ab9e0",
+                "621bc1402d221fe9"
+            ]
+        ]
+    },
+    {
+        "id": "6616831f8681d587",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Device GPI",
+        "func": "var dirno = msg.payload[\"dirno\"]\nvar enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true) {\n    var deviceGPIevent = flow.get(\"GPI_EventEnabled\");\n    if (!deviceGPIevent) {\n        flow.set(\"GPI_EventEnabled\", true);\n        msg.topic = \"com.zenitel.device.\" + dirno + \".gpi\";\n    }\n}\nelse {\n    flow.set(\"GPI_EventEnabled\", false);\n    msg.payload = \"TRACE Device GPI set to false\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 4700,
+        "wires": [
+            [
+                "b30f057d58192957",
+                "a031e55c1921dbbc"
+            ]
+        ]
+    },
+    {
+        "id": "a0634d8b0ad25893",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Device Account",
+        "func": "var enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true)\n{\n    var deviceAccountEvent = flow.get(\"DeviceAccountEventEnabled\");\n    if (!deviceAccountEvent)\n    {\n        flow.set(\"DeviceAccountEventEnabled\", true);\n        msg.topic = \"com.zenitel.system.device_account\";\n    }\n}\nelse\n{\n    flow.set(\"DeviceAccountEventEnabled\", false);\n    msg.payload = \"TRACE Device GPO set to false\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 4860,
+        "wires": [
+            [
+                "bc2787f2d1de4a7a",
+                "1dfa899f5a3899c4"
+            ]
+        ]
+    },
+    {
+        "id": "015f6a745de65d00",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle TRACE Open Door",
+        "func": "var enabled = msg.payload[\"enabled\"]\n\n//Clear message;\nmsg = {};\n\nif (enabled == true)\n{\n    var openDoorEvent = flow.get(\"OpenDoorEventEnabled\");\n    if (! openDoorEvent)\n    {\n        flow.set(\"OpenDoorEventEnabled\", true);\n        msg.topic = \"com.zenitel.system.open_door\";\n    }\n}\nelse\n{\n    flow.set(\"OpenDoorEventEnabled\", false);\n    msg.payload = \"TRACE Open Door set to false\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 5020,
+        "wires": [
+            [
+                "7171cdbb63d1f783",
+                "17a6cce4cf403c20"
+            ]
+        ]
+    },
+    {
+        "id": "17169353ac81be81",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Call",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'enabled'   : false,\n        'set_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Call;datatype=ExtensionObject;typeId=ns=3;i=3124\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1160,
+        "wires": [
+            [
+                "b995792d0e4cbaa2"
+            ]
+        ]
+    },
+    {
+        "id": "96ace2f3b7088c2d",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Call Leg",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'enabled'   : false,\n        'set_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Call Leg;datatype=ExtensionObject;typeId=ns=3;i=3125\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1220,
+        "wires": [
+            [
+                "3e6e76879ccc5c3c"
+            ]
+        ]
+    },
+    {
+        "id": "1346396b3bd8dbe5",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device GPO",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'dirno'   : '0',\n        'enabled' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Device GPO;datatype=ExtensionObject;typeId=ns=3;i=3126\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1280,
+        "wires": [
+            [
+                "68927b7201be1bd4"
+            ]
+        ]
+    },
+    {
+        "id": "9cebfdf01ba27a70",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device GPI",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'dirno'   : '0',\n        'enabled' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Device GPI;datatype=ExtensionObject;typeId=ns=3;i=3127\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1340,
+        "wires": [
+            [
+                "fdc7a880ac102019"
+            ]
+        ]
+    },
+    {
+        "id": "904683e6a149ba19",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device Account",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'enabled'   : false,\n        'set_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Device Account;datatype=ExtensionObject;typeId=ns=3;i=3128\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1400,
+        "wires": [
+            [
+                "e5be8b076d754099"
+            ]
+        ]
+    },
+    {
+        "id": "7e9dfec59b2eb4d8",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Open Door",
+        "func": "\nvar mess =\n{\n    payload:\n    {\n        'enabled'   : false,\n        'set_value' : false\n    }\n}\n\nmess.topic = \"ns=1;s=TRACE Open Door;datatype=ExtensionObject;typeId=ns=3;i=3129\";\nreturn mess;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1460,
+        "wires": [
+            [
+                "a80a926f92e41a44"
+            ]
+        ]
+    },
+    {
+        "id": "7790131a6abd44b0",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "1d6c97ffd3e428e7"
+        ],
+        "x": 615,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f3443d6dd93b876a",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Device GPO",
+        "mode": "link",
+        "links": [
+            "d96165bc8b094666"
+        ],
+        "x": 615,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "b3e5b18d4e8b1119",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Device GPI",
+        "mode": "link",
+        "links": [
+            "dbf02aa80a792d58"
+        ],
+        "x": 615,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "ad4c1d5cb23c6502",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Device Account",
+        "mode": "link",
+        "links": [
+            "c482ab454a5de446"
+        ],
+        "x": 615,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "087b0adb97b95d31",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Open Door",
+        "mode": "link",
+        "links": [
+            "22115ad688a38821"
+        ],
+        "x": 615,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "91c33492b42fc711",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "e411de8aad0134e2"
+        ],
+        "x": 615,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "b995792d0e4cbaa2",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "3e6e76879ccc5c3c",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "68927b7201be1bd4",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "fdc7a880ac102019",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "e5be8b076d754099",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "a80a926f92e41a44",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear DELETE Call Id",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1205,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "e411de8aad0134e2",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Call",
+        "links": [
+            "91c33492b42fc711",
+            "062422193bf2ad2e"
+        ],
+        "x": 765,
+        "y": 1160,
+        "wires": [
+            [
+                "17169353ac81be81"
+            ]
+        ]
+    },
+    {
+        "id": "1d6c97ffd3e428e7",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Call Leg",
+        "links": [
+            "7790131a6abd44b0",
+            "b6d7a74e58291328"
+        ],
+        "x": 765,
+        "y": 1220,
+        "wires": [
+            [
+                "96ace2f3b7088c2d"
+            ]
+        ]
+    },
+    {
+        "id": "d96165bc8b094666",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Device GPO",
+        "links": [
+            "f3443d6dd93b876a",
+            "ef04d522db8ce968",
+            "621bc1402d221fe9"
+        ],
+        "x": 765,
+        "y": 1280,
+        "wires": [
+            [
+                "1346396b3bd8dbe5"
+            ]
+        ]
+    },
+    {
+        "id": "dbf02aa80a792d58",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Device GPI",
+        "links": [
+            "b3e5b18d4e8b1119",
+            "a031e55c1921dbbc"
+        ],
+        "x": 765,
+        "y": 1340,
+        "wires": [
+            [
+                "9cebfdf01ba27a70"
+            ]
+        ]
+    },
+    {
+        "id": "c482ab454a5de446",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Device Account",
+        "links": [
+            "ad4c1d5cb23c6502",
+            "1dfa899f5a3899c4"
+        ],
+        "x": 765,
+        "y": 1400,
+        "wires": [
+            [
+                "904683e6a149ba19"
+            ]
+        ]
+    },
+    {
+        "id": "22115ad688a38821",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Clear TRACE Open Door",
+        "links": [
+            "087b0adb97b95d31",
+            "17a6cce4cf403c20"
+        ],
+        "x": 765,
+        "y": 1460,
+        "wires": [
+            [
+                "7e9dfec59b2eb4d8"
+            ]
+        ]
+    },
+    {
+        "id": "1e15c043d6eaf662",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Call ",
+        "info": "",
+        "x": 1470,
+        "y": 4260,
+        "wires": []
+    },
+    {
+        "id": "8178a57534825738",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "com.zenitel.call",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4180,
+        "wires": [
+            [
+                "481d84f967bdfe66"
+            ],
+            [
+                "e5801207b26b8523"
+            ]
+        ]
+    },
+    {
+        "id": "e5801207b26b8523",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Call is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1550,
+        "y": 4200,
+        "wires": []
+    },
+    {
+        "id": "062422193bf2ad2e",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "e411de8aad0134e2"
+        ],
+        "x": 1335,
+        "y": 4260,
+        "wires": []
+    },
+    {
+        "id": "57116bf0f9050f0c",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "Event Received",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 5300,
+        "wires": []
+    },
+    {
+        "id": "9aef0caa2dad20bf",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "com.zenitel.call",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "com.zenitel.call_leg",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "gpo",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "gpi",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "com.zenitel.system.device_account",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "com.zenitel.system.open_door",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 550,
+        "y": 5440,
+        "wires": [
+            [
+                "4e825445ce9e6676"
+            ],
+            [
+                "26da13bf82946b8a"
+            ],
+            [
+                "b4043efcb13fac0c"
+            ],
+            [
+                "1e26392736e23c0f"
+            ],
+            [
+                "eaed5ddaf8dea17d"
+            ],
+            [
+                "ec84a3b43c064dc8"
+            ]
+        ]
+    },
+    {
+        "id": "e9623adabc6786ad",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Call Leg",
+        "info": "",
+        "x": 1480,
+        "y": 4420,
+        "wires": []
+    },
+    {
+        "id": "becfde15f923c5ff",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "com.zenitel.call_leg",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4340,
+        "wires": [
+            [
+                "70612cdb14691814"
+            ],
+            [
+                "e867012bef474045"
+            ]
+        ]
+    },
+    {
+        "id": "b6d7a74e58291328",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "1d6c97ffd3e428e7"
+        ],
+        "x": 1335,
+        "y": 4420,
+        "wires": []
+    },
+    {
+        "id": "e867012bef474045",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Call Leg is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 4360,
+        "wires": []
+    },
+    {
+        "id": "61b048a47308c252",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device GPO",
+        "info": "",
+        "x": 1490,
+        "y": 4580,
+        "wires": []
+    },
+    {
+        "id": "ac922733583ab9e0",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "gpo",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4500,
+        "wires": [
+            [
+                "d658bf318c4852fd"
+            ],
+            [
+                "ed0e33b5c0a05b6b"
+            ]
+        ]
+    },
+    {
+        "id": "621bc1402d221fe9",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "d96165bc8b094666"
+        ],
+        "x": 1335,
+        "y": 4580,
+        "wires": []
+    },
+    {
+        "id": "ed0e33b5c0a05b6b",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Device GPO is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 4520,
+        "wires": []
+    },
+    {
+        "id": "71fabefbbb776c12",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device GPI",
+        "info": "",
+        "x": 1490,
+        "y": 4740,
+        "wires": []
+    },
+    {
+        "id": "b30f057d58192957",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "gpi",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4660,
+        "wires": [
+            [
+                "ada730649cdb60a6"
+            ],
+            [
+                "40248b1fe798d2f8"
+            ]
+        ]
+    },
+    {
+        "id": "a031e55c1921dbbc",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "dbf02aa80a792d58"
+        ],
+        "x": 1335,
+        "y": 4740,
+        "wires": []
+    },
+    {
+        "id": "40248b1fe798d2f8",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Device GPI is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 4680,
+        "wires": []
+    },
+    {
+        "id": "0a083ee941ae2aaa",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Device Account",
+        "info": "",
+        "x": 1500,
+        "y": 4900,
+        "wires": []
+    },
+    {
+        "id": "bc2787f2d1de4a7a",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "com.zenitel.system.device_account",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4820,
+        "wires": [
+            [
+                "fda460de85f55864"
+            ],
+            [
+                "b1969fbfee3c4a2e"
+            ]
+        ]
+    },
+    {
+        "id": "1dfa899f5a3899c4",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "c482ab454a5de446"
+        ],
+        "x": 1335,
+        "y": 4900,
+        "wires": []
+    },
+    {
+        "id": "b1969fbfee3c4a2e",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Device Account is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 4840,
+        "wires": []
+    },
+    {
+        "id": "da4880d0619147b0",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear TRACE Open Door",
+        "info": "",
+        "x": 1490,
+        "y": 5060,
+        "wires": []
+    },
+    {
+        "id": "7171cdbb63d1f783",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "com.zenitel.system.open_door",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 4980,
+        "wires": [
+            [
+                "c218abb3b8ea5bca"
+            ],
+            [
+                "e91d678d54472a10"
+            ]
+        ]
+    },
+    {
+        "id": "17a6cce4cf403c20",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output Clear TRACE Call",
+        "mode": "link",
+        "links": [
+            "22115ad688a38821"
+        ],
+        "x": 1335,
+        "y": 5060,
+        "wires": []
+    },
+    {
+        "id": "e91d678d54472a10",
+        "type": "debug",
+        "z": "b4792f36.7b37e",
+        "name": "TRACE Open Door is false",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 5000,
+        "wires": []
+    },
+    {
+        "id": "481d84f967bdfe66",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4160,
+        "wires": []
+    },
+    {
+        "id": "3187ad4f7fa32e17",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Input Subscribe Event",
+        "links": [
+            "481d84f967bdfe66",
+            "70612cdb14691814",
+            "d658bf318c4852fd",
+            "ada730649cdb60a6",
+            "fda460de85f55864",
+            "c218abb3b8ea5bca"
+        ],
+        "x": 155,
+        "y": 5440,
+        "wires": [
+            [
+                "be3eea4dfb9293af"
+            ]
+        ]
+    },
+    {
+        "id": "70612cdb14691814",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4320,
+        "wires": []
+    },
+    {
+        "id": "d658bf318c4852fd",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4480,
+        "wires": []
+    },
+    {
+        "id": "ada730649cdb60a6",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4640,
+        "wires": []
+    },
+    {
+        "id": "fda460de85f55864",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4800,
+        "wires": []
+    },
+    {
+        "id": "c218abb3b8ea5bca",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output TRACE Call Leg",
+        "mode": "link",
+        "links": [
+            "3187ad4f7fa32e17"
+        ],
+        "x": 1475,
+        "y": 4960,
+        "wires": []
+    },
+    {
+        "id": "be3eea4dfb9293af",
+        "type": "wamp subs",
+        "z": "b4792f36.7b37e",
+        "router": "f1ab036094358fe5",
+        "procedure": "msg.topic",
+        "name": "Event Subscrition Handler",
+        "x": 330,
+        "y": 5440,
+        "wires": [
+            [
+                "57116bf0f9050f0c",
+                "9aef0caa2dad20bf"
+            ]
+        ]
+    },
+    {
+        "id": "b4043efcb13fac0c",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Device GPO Event",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=Device_GPO_Event-AlarmText;datatype=String\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 5420,
+        "wires": [
+            [
+                "bb49bab89936d5a1"
+            ]
+        ]
+    },
+    {
+        "id": "1e26392736e23c0f",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Device GPI Event",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=Device_GPI_Event-AlarmText;datatype=String\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 5480,
+        "wires": [
+            [
+                "a63b0ccd37c74fcf"
+            ]
+        ]
+    },
+    {
+        "id": "eaed5ddaf8dea17d",
+        "type": "function",
+        "z": "b4792f36.7b37e",
+        "name": "Handle Device Account Event",
+        "func": "msg.payload = JSON.stringify(msg.payload.args[0]);\nmsg.topic = \"ns=1;s=DeviceAccountEvent-AlarmText;datatype=String\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 5540,
+        "wires": [
+            [
+                "e9b86eb51fe7b589"
+            ]
+        ]
+    },
+    {
+        "id": "bb49bab89936d5a1",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5420,
+        "wires": []
+    },
+    {
+        "id": "a63b0ccd37c74fcf",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5480,
+        "wires": []
+    },
+    {
+        "id": "e9b86eb51fe7b589",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Output to Write Client",
+        "mode": "link",
+        "links": [
+            "42a0ae16cee676ac"
+        ],
+        "x": 1075,
+        "y": 5540,
+        "wires": []
+    },
+    {
+        "id": "c053e109a47c960d",
+        "type": "switch",
+        "z": "b4792f36.7b37e",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Clear Client Requests",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "483f29eb343c3746"
+            ],
+            [
+                "ab08549b.86da7"
+            ]
+        ]
+    },
+    {
+        "id": "ec7f74722574e1c3",
+        "type": "link in",
+        "z": "b4792f36.7b37e",
+        "name": "Inpput Clear Client Requests",
+        "links": [
+            "483f29eb343c3746"
+        ],
+        "x": 105,
+        "y": 900,
+        "wires": [
+            [
+                "c2b6605bf4980f3e"
+            ]
+        ]
+    },
+    {
+        "id": "483f29eb343c3746",
+        "type": "link out",
+        "z": "b4792f36.7b37e",
+        "name": "Ouput Clear Client Requests",
+        "mode": "link",
+        "links": [
+            "ec7f74722574e1c3"
+        ],
+        "x": 855,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "92ad6d7177e919dd",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Subscribe Client Requests",
+        "info": "",
+        "x": 130,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8ef25f9194a94071",
+        "type": "comment",
+        "z": "b4792f36.7b37e",
+        "name": "Clear Client Requests",
+        "info": "",
+        "x": 1020,
+        "y": 260,
+        "wires": []
+    }
+]
